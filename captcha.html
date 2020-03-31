@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+input[type="checkbox"][id^="myCheckbox"] {
+  display: none;
+}
+
+label {
+  border: 1px solid #fff;
+  display: block;
+  position: relative;
+  margin: 1px;
+  cursor: pointer;
+}
+
+label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label img {
+  height: 80px;
+  width: 80px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+:checked + label {
+  border-color: #ddd;
+}
+
+:checked + label:before {
+  content: "✓";
+  background-color: grey;
+  transform: scale(1);
+}
+
+:checked + label img {
+  transform: scale(0.9);
+  /* box-shadow: 0 0 5px #333; */
+  z-index: -1;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 1px;
+  width: 300px;
+  height: 300px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+</style>
+	<body>
+    <form action="" method="GET">
+
+	 <div class="grid-container">
+	  <div class="grid-item">
+	    <input type="checkbox" id="myCheckbox1" />
+	    <label for="myCheckbox1"><img src="https://images.pexels.com/photos/37403/bora-bora-french-polynesia-sunset-ocean.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"/></label>
+	  </div>
+	  <div class="grid-item">
+	    <input type="checkbox" id="myCheckbox2" />
+	    <label for="myCheckbox2"><img src="http://tech21info.com/admin/wp-content/uploads/2013/03/chrome-logo-200x200.png" /></label>
+	  </div>
+
+    <div class="grid-item">
+	    <input type="checkbox" id="myCheckbox3" />
+	    <label for="myCheckbox3"><img src="http://www.thebusinessofsports.com/wp-content/uploads/2010/10/facebook-icon-200x200.png" /></label>
+	  </div>
+	 <div class="grid-item">
+      <input type="checkbox" id="myCheckbox4" />
+      <label for="myCheckbox4"><img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /></label>
+    </div>
+    <div class="grid-item">
+      <input type="checkbox" id="myCheckbox5" />
+      <label for="myCheckbox5"><img src="http://tech21info.com/admin/wp-content/uploads/2013/03/chrome-logo-200x200.png" /></label>
+    </div>
+
+    <div class="grid-item">
+      <input type="checkbox" id="myCheckbox6" />
+      <label for="myCheckbox6"><img src="http://www.thebusinessofsports.com/wp-content/uploads/2010/10/facebook-icon-200x200.png" /></label>  
+    </div>
+   <div class="grid-item">
+      <input type="checkbox" id="myCheckbox7" />
+      <label for="myCheckbox7"><img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /></label>
+    </div>
+    <div class="grid-item">
+      <input type="checkbox" id="myCheckbox8" />
+      <label for="myCheckbox8"><img src="http://tech21info.com/admin/wp-content/uploads/2013/03/chrome-logo-200x200.png" /></label>
+    </div>
+
+    <div class="grid-item">
+      <input type="checkbox" id="myCheckbox9" />
+      <label for="myCheckbox9"><img src="http://www.thebusinessofsports.com/wp-content/uploads/2010/10/facebook-icon-200x200.png" /></label>
+      </div>
+     </div>
+    <br><br><br><br>
+    <input type="submit" name="submit" value="Submit">
+    </form>
+
+	</body>
+</html>

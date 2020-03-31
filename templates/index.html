@@ -1,0 +1,53 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <title>Codeply simple HTML/CSS/JS preview</title>
+    <base target="_self"> 
+  
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <style>body,html {
+      height: 100%;
+  }</style>
+  </head>
+  <body class="vsc-initialized">
+    <div class="d-flex align-items-center flex-column justify-content-center h-100 bg-dark text-white" id="header">
+      <h1 class="display-4">Welcome.</h1>
+      <br>
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+          
+          <div class="form-group">
+            <select class="form-control" name="model">    
+                <option value="divyam">Self Trained - 85%</option>    
+                <option value="vgg">VGG - 90%</option>     
+                <option value="XCEPT">Xception - 89%</option>
+                <option value="incep">Inception - 88%</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Data File as Zip</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="file" >
+          </div>
+          <br>
+          <div class="form-group">
+              <input type="submit" class="btn btn-info btn-lg btn-block" value="Run">
+          </div>
+      </form>
+  </div>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  
+  
+    <script src="https://rawgit.com/bassjobsen/affix/master/assets/js/affix.js"></script>
+  
+    <script>
+    
+    </script>
+  
+  
+  </body></html>
